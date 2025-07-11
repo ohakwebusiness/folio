@@ -9,10 +9,10 @@ import LightbulbIcon from './icons/LightbulbIcon';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-primary text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-8">
           {/* About Section */}
-          <div className="space-y-4 col-span-2 md:col-span-4 lg:col-span-1">
+          <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <LightbulbIcon className="w-8 h-8 text-brand-light" />
               <span className="text-xl font-bold">BigTink Digital Creations</span>
@@ -23,19 +23,18 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-light tracking-wider uppercase">Quick Links</h3>
+          <div className="mt-8 sm:mt-0">
+            <h3 className="text-base md:text-lg font-semibold text-brand-light tracking-wider uppercase">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/portfolio" className="text-gray-300 hover:text-white transition-colors">Portfolio</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-light tracking-wider uppercase">Services</h3>
+          <div className="mt-8 sm:mt-0">
+            <h3 className="text-base md:text-lg font-semibold text-brand-light tracking-wider uppercase">Services</h3>
             <ul className="mt-4 space-y-2">
               <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Web Development</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Mobile Apps</Link></li>
@@ -45,8 +44,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Legal */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-light tracking-wider uppercase">Legal</h3>
+          <div className="mt-8 sm:mt-0">
+            <h3 className="text-base md:text-lg font-semibold text-brand-light tracking-wider uppercase">Legal</h3>
             <ul className="mt-4 space-y-2">
               <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>
@@ -55,8 +54,8 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-light tracking-wider uppercase">Contact Us</h3>
+          <div className="mt-8 sm:mt-0">
+            <h3 className="text-base md:text-lg font-semibold text-brand-light tracking-wider uppercase">Contact Us</h3>
             <ul className="mt-4 space-y-2 text-gray-300">
               <li className="flex items-start">
                 <span className="mt-1 mr-2">📍</span>
@@ -74,8 +73,8 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Social Media */}
-          <div>
-            <h3 className="text-lg font-semibold text-brand-light tracking-wider uppercase">Follow Us</h3>
+          <div className="mt-8 sm:mt-0">
+            <h3 className="text-base md:text-lg font-semibold text-brand-light tracking-wider uppercase">Follow Us</h3>
             <div className="flex mt-4 space-x-4">
               <a href="#" className="text-gray-300 hover:text-brand-light transition-colors"><LinkedInIcon className="w-6 h-6" /></a>
               <a href="#" className="text-gray-300 hover:text-brand-light transition-colors"><TwitterIcon className="w-6 h-6" /></a>
@@ -84,7 +83,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-brand-secondary text-center text-gray-400 text-sm">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-brand-secondary text-center text-gray-400 text-xs md:text-sm">
           <p>&copy; {new Date().getFullYear()} BigTink Digital Creations. All Rights Reserved.</p>
         </div>
       </div>

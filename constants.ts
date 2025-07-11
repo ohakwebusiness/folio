@@ -12,9 +12,21 @@ import ConsultingIcon from './components/icons/ConsultingIcon';
 export const services: Service[] = [
   {
     icon: CodeIcon,
-    title: 'Web Development',
+    title: 'Website Development & Design',
     description: 'We craft responsive, secure, and high-performance websites tailored to your needs, from simple landing pages to complex web applications.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'PostgreSQL'],
+  },
+  {
+    icon: MegaphoneIcon,
+    title: 'Digital Marketing (Full Stack)',
+    description: 'We boost your online presence with SEO, social media campaigns, and email marketing strategies.',
+    technologies: ['SEO', 'PPC Advertising', 'Content Marketing', 'SMM'],
+  },
+  {
+    icon: CartIcon,
+    title: 'Ecommerce Solutions',
+    description: 'We develop robust online stores with secure payment gateways and inventory management to drive your business growth.',
+    technologies: ['Shopify', 'WooCommerce', 'Magento', 'Custom Solutions'],
   },
   {
     icon: MobileIcon,
@@ -29,34 +41,10 @@ export const services: Service[] = [
     technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
   },
   {
-    icon: CartIcon,
-    title: 'E-commerce Solutions',
-    description: 'We develop robust online stores with secure payment gateways and inventory management to drive your business growth.',
-    technologies: ['Shopify', 'WooCommerce', 'Magento', 'Custom Solutions'],
-  },
-  {
-    icon: MegaphoneIcon,
-    title: 'Digital Marketing',
-    description: 'We boost your online presence with SEO, social media campaigns, and email marketing strategies.',
-    technologies: ['SEO', 'PPC Advertising', 'Content Marketing', 'SMM'],
-  },
-  {
-    icon: PencilIcon,
-    title: 'Content Creation',
-    description: 'We produce compelling content, including blog posts, videos, and graphics, to tell your brand’s story.',
-    technologies: ['Copywriting', 'Videography', 'Graphic Design'],
-  },
-  {
-    icon: LightbulbIcon,
-    title: 'Branding',
-    description: 'We shape your brand identity with logos, color schemes, and messaging that resonate with your audience.',
-    technologies: ['Logo Design', 'Brand Strategy', 'Style Guides'],
-  },
-  {
     icon: ConsultingIcon,
-    title: 'Digital Strategy Consulting',
-    description: 'We provide expert guidance on digital strategies and technology adoption to help you succeed.',
-    technologies: ['Roadmapping', 'Tech Audits', 'Market Analysis'],
+    title: 'Consulting',
+    description: 'Get expert advice and digital strategy tailored to your business goals.',
+    technologies: ['Business Analysis', 'Digital Strategy'],
   },
 ];
 
@@ -414,18 +402,18 @@ export const teamMembers: TeamMember[] = [
 export const testimonials: Testimonial[] = [
   {
     quote: 'BigTink Digital Creations transformed our online presence. Their team is professional, creative, and delivered beyond our expectations.',
-    author: 'Alex Johnson',
-    company: 'CEO, Luxe Apparel',
+    author: 'Chinedu Okafor',
+    company: 'CEO, Naija Fashions',
   },
   {
     quote: 'The mobile app they developed is flawless. Their attention to detail and commitment to quality is unmatched.',
-    author: 'Samantha Lee',
-    company: 'Founder, CoinFlow',
+    author: 'Aisha Bello',
+    company: 'Founder, Lagos Fintech',
   },
   {
     quote: 'Working with BigTink was a game-changer for our brand. Their strategic insights and design expertise are top-notch.',
-    author: 'David Chen',
-    company: 'CMO, TechCorp',
+    author: 'Emeka Umeh',
+    company: 'CMO, Abuja Tech Hub',
   },
 ];
 

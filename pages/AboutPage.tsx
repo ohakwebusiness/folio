@@ -48,14 +48,8 @@ const AboutPage: React.FC = () => {
                 Founded in 2020, BigTink Digital Creations was born from a desire to bridge the gap between great ideas and powerful digital execution. We saw a need for a truly integrated agency that could handle every aspect of a digital project—from initial strategy and design to development and launch—all under one roof. Our journey began with a small, dedicated team and a big vision: to become a trusted partner for businesses looking to make a real impact online.
               </p>
             </div>
-            <div>
-              <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&fit=max" alt="Team collaborating" className="rounded-lg shadow-xl"/>
-            </div>
           </div>
           <div className="mt-16 md:mt-24 grid md:grid-cols-2 gap-12 items-center">
-             <div className="order-2 md:order-1">
-              <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&fit=max" alt="Whiteboard with strategy" className="rounded-lg shadow-xl"/>
-            </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold text-brand-primary">Mission & Vision</h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
@@ -119,34 +113,6 @@ const AboutPage: React.FC = () => {
                   ))}
               </div>
           </div>
-      </section>
-      
-      {/* Meet the Team */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-primary">Meet Our Team</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-              The architects of your digital success. A blend of creativity, strategy, and technical prowess.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { name: 'Ogbonna Ohakwe', title: 'Founder' },
-              { name: 'Gloria Nwabueze', title: 'Head of Design' },
-              { name: 'Williams Nnamdi', title: 'Chief Technology Officer' },
-              { name: 'Emmanuel Happiness', title: 'Head of Marketing' },
-            ].map((member) => (
-              <div key={member.name} className="bg-white rounded-lg shadow-md p-6 text-center">
-                <div className="mx-auto h-20 w-20 rounded-full bg-brand-light flex items-center justify-center mb-4">
-                  <span className="text-3xl font-bold text-brand-primary">{member.name.charAt(0)}</span>
-                </div>
-                <h3 className="text-lg font-semibold text-brand-primary">{member.name}</h3>
-                <p className="text-gray-600">{member.title}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
       
     </div>

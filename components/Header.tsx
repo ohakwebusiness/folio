@@ -11,7 +11,6 @@ const Header: React.FC = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
   ];
   
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
