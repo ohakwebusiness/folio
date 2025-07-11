@@ -131,12 +131,24 @@ const AboutPage: React.FC = () => {
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {teamMembers.map((member) => (
-              <TeamMemberCard key={member.name} member={member} />
+            {[
+              { name: 'Ogbonna Ohakwe', title: 'Founder' },
+              { name: 'Gloria Nwabueze', title: 'Head of Design' },
+              { name: 'Williams Nnamdi', title: 'Chief Technology Officer' },
+              { name: 'Emmanuel Happiness', title: 'Head of Marketing' },
+            ].map((member) => (
+              <div key={member.name} className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="mx-auto h-20 w-20 rounded-full bg-brand-light flex items-center justify-center mb-4">
+                  <span className="text-3xl font-bold text-brand-primary">{member.name.charAt(0)}</span>
+                </div>
+                <h3 className="text-lg font-semibold text-brand-primary">{member.name}</h3>
+                <p className="text-gray-600">{member.title}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
+      
     </div>
   );
 };
